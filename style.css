@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+  font-family: poppins;
+  transition: 0.5s;
+}
+body{
+  margin: 0px;
+}
+nav{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  background-color: #333;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  color: #ddd;
+  margin-left: 10px;
+}
+a:hover{
+  color: cyan;
+}
+section, footer{
+  background-color: #333;
+  margin: 0px;
+}
+#intro{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("https://cdn.wallpapersafari.com/34/25/B8OevU.jpg");
+  color: white;
+}
+h2{
+  font-size: 40px;
+  background-color: #333;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+}
+#more{
+  background-color: #f72585; 
+  padding: 10px 20px 10px 20px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+#more:hover{
+  background-color: #b5179e; 
+  color: white;
+}
+#cards{
+  height: max-content;
+  display: flex;
+  align-items: start;
+  padding: 10px 0px 10px 0px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card{
+  height: 250px;
+  width: 200px;
+  background-color: pink;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+.card:hover{
+  transform: scale(1.03);
+}
+.card:nth-child(1){
+  background: url('https://mcdn.wallpapersafari.com/medium/93/27/m3Mlaz.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card:nth-child(2){
+  background: url('https://mcdn.wallpapersafari.com/medium/34/7/f0YktP.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card:nth-child(3){
+  background: url('https://mcdn.wallpapersafari.com/medium/45/21/cF0tQU.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.card:nth-child(4){
+  background: url('https://mcdn.wallpapersafari.com/medium/86/16/l1oVFR.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#end{
+  background: url('https://images.unsplash.com/photo-1519638399535-1b036603ac77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 500px;
+}
+h3{
+  font-size: 40px;
+  background-color: #333;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+}
+footer{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+@media (max-width: 670px){
+  #primaryLinks{
+    display: none;
+  }
+}
+@media (max-width: 495px){
+  .card{
+    height: 150px;
+    width: 100px;
+  }
+}
